@@ -1,0 +1,136 @@
+.header {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Authentication Buttons (Login/Registration) */
+.login-btn, .register-btn {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover, .register-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.top-bar a:hover {
+    text-decoration: underline;
+}
+
+/* Main Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 20px;
+    color: white;
+}
+
+.logo img {
+    max-height: 50px; /* Adjust the logo size */
+}
+
+.main-navigation {
+    display: flex;
+    gap: 20px;
+}
+
+.main-navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-navigation a:hover {
+    text-decoration: underline;
+}
+
+.catalog-btn {
+    background-color: #ff6200;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header-icons .icon-heart,
+.header-icons .icon-compare,
+.header-icons .icon-user,
+.header-icons .icon-cart {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.icon-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-total {
+    font-weight: bold;
+}
+
+.search-bar input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.search-bar input::placeholder {
+    color: #ccc;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+.breadcrumb a {
+    color: #555;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Authentication Buttons Container */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}

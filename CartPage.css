@@ -1,0 +1,144 @@
+.cart-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.cart-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.cart-item-details h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.cart-item-details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.cart-item-quantity button {
+    padding: 5px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item-quantity button:hover {
+    background-color: #0056b3;
+}
+
+.cart-item-quantity span {
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.remove-item-btn {
+    padding: 8px 12px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-item-btn:hover {
+    background-color: #c9302c;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.checkout-btn {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #218838;
+}
+
+/* Адаптивный дизайн для мобильных устройств */
+@media (max-width: 768px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .cart-item-quantity button {
+        padding: 5px 10px;
+    }
+
+    .cart-item-quantity span {
+        padding: 0 5px;
+    }
+
+    .cart-total {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .checkout-btn {
+        width: 100%;
+    }
+}
